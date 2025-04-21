@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lan Lin | Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <body>
+    <div class="half-circle left-circle"></div>
+  <div class="half-circle right-circle"></div>
+
+  <nav class="top-nav">
+    <div class="nav-brand">
+      <a href="index.html" class="brand-main">
+        <img src="Resources/LLlogo.png" alt="Lan Lin Logo">
+        <span>LAN LIN</span>
+      </a>
+  
+      <div class="brand-links">
+        <a href="mailto:ll1230@georgetown.edu" target="_blank">
+          <img src="Resources/email.png" alt="Email Icon">
+        </a>
+        <a href="https://www.linkedin.com/in/lan-lin" target="_blank">
+          <img src="resources/linkedin.svg" alt="LinkedIn Icon">
+        </a>
+      </div>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="creative.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>  
+
+  <section class="contact">
+    <h2 class="section-title"><span>contact</span> me</h2>
+    <form action="https://formspree.io/f/mzzrpvon" method="POST">
+      <!-- Name -->
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
+  
+      <!-- Email -->
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required>
+  
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What are you interested in?</legend>
+        <label><input type="checkbox" name="interests" value="collaboration"> Collaboration</label>
+        <label><input type="checkbox" name="interests" value="feedback"> Feedback</label>
+        <label><input type="checkbox" name="interests" value="freelance"> Freelance Project</label>
+      </fieldset>
+  
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>How did you hear about me?</legend>
+        <label><input type="radio" name="source" value="linkedin" required> LinkedIn</label>
+        <label><input type="radio" name="source" value="instagram"> Instagram</label>
+        <label><input type="radio" name="source" value="friend"> From a Friend</label>
+      </fieldset>
+  
+      <!-- Dropdown -->
+      <label for="project">What type of project are you interested in?</label>
+      <select name="project" id="project" required>
+        <option value="">-- Select an option --</option>
+        <option value="brand">Branding</option>
+        <option value="visual">Visual Merchandising</option>
+        <option value="strategy">Creative Strategy</option>
+        <option value="other">Other</option>
+      </select>
+  
+      <!-- Toggle Switch -->
+      <label class="switch-label">
+        Subscribe to my newsletter
+        <input type="checkbox" name="subscribe" class="switch">
+        <span class="slider"></span>
+      </label>
+  
+      <!-- Message -->
+      <label for="message">Your Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+  
+      <!-- Submit -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Lan Lin</p>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,377 @@
+:root {
+    --white: #fff;
+    --black: #111;
+    --red: #e53935;
+    --gray: #555;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #ffffff;
+    color: var(--black);
+  }
+  
+  .half-circle {
+    position: fixed;
+    top: 50%; /* vertically center */
+    transform: translateY(-50%);
+    width: 120px;           /* adjust width */
+    height: 240px;          /* adjust height */
+    background-color: #e53935;
+    border-radius: 120px / 240px;  
+    z-index: -1;
+  }
+  
+  .left-circle {
+    left: -60px; /* half out of the screen */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .right-circle {
+    right: -60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav h1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  nav img{
+    height: 60px; 
+    width: auto;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #111;
+  }
+  
+  .brand-main img {
+    height: 50px;
+    width:auto;
+  }
+  
+  .brand-main span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .brand-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-left:0.8rem;
+    align-items: center;
+  }
+  
+  .brand-links img {
+    height: 32px;
+    width: auto;
+    transition: 0.3s ease;
+    gap: 0.5rem;
+  }
+  
+  .hero {
+    padding: 4rem 2rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: row; /* ensures image left, text right */
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .hero-image {
+    width: 320px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .hero-text {
+    max-width: 700px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  .hero-logo {
+    width: 10px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .about, .projects, .contact {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .about ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left:0;
+  }
+  
+  .about li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title span {
+    background-color: #e53935; /* Red accent */
+    color: white;
+    padding: 0 0.4rem;
+    font-weight: 700;
+  }
+  
+  .job {
+    margin-top: 2rem;
+  }
+  .job strong {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .job em {
+    display: block;
+    font-style: normal;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  
+  .project img {
+    width:100%;
+    max-width: 300px;
+    border: 4px solid#e53935;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .project h3 a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .project div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .projects-layout {
+    display: flex;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .red-bar-accent {
+    position: fixed;      
+    top: 85px;
+    left: 0;
+    z-index: -1;         
+    width: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .red-bar-accent::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: black;
+    margin-bottom: 0px;
+  }
+  
+  .red-bar-accent::after {
+    content: "";
+    width: 80px;                 
+    height: 400px;
+    background-color: #e53935;
+    margin: bottom 10px;
+    z-index: 1;
+  }
+  
+  
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    font-family: inherit;
+  }
+  
+  .contact button {
+    padding: 0.75rem;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .switch-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .switch {
+    display: none;
+  }
+  
+  .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .slider::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  /* When checked, move the circle and change color */
+  .switch:checked + .slider {
+    background-color: #111;
+  }
+  
+  .switch:checked + .slider::before {
+    transform: translateX(20px);
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    border-top: 1px solid #eee;
+  }
+  
